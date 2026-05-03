@@ -12,7 +12,7 @@ import java.util.List;
 import static user.UserAuthSteps.deleteUser;
 import static user.UserAuthSteps.userLoginAndGetToken;
 import static user.UserSteps.createUser;
-import static user.orderSteps.*;
+import static user.OrderSteps.*;
 
 public class OrdersTest {
     private UserCreate user;
@@ -69,7 +69,9 @@ public class OrdersTest {
 
     @DisplayName("Создание заказа с ингредиентом")
     @Test
-    void createOrderWithIngredientTest() { createOrderWithIngredient(); }
+    void createOrderWithIngredientTest() {
+        createOrderWithIngredient();
+    }
 
     @DisplayName("Получение заказов без передачи токена пользователя")
     @Test

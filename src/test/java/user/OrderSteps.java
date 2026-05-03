@@ -2,10 +2,7 @@ package user;
 
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +10,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class orderSteps {
+public class OrderSteps {
 
     @Step("Создание заказа с привязкой к определенному пользователю")
     public static ValidatableResponse createOrderWithLogin(String accessToken, List<String> ingredientsIds) {

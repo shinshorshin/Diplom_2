@@ -6,14 +6,8 @@ import org.junit.jupiter.api.Test;
 import praktikum.EnvConfig;
 import praktikum.user.UserCreate;
 
-import java.sql.Array;
-import java.util.Arrays;
-import java.util.List;
-
-import static java.sql.Array.*;
 import static user.UserSteps.*;
 import static user.UserAuthSteps.*;
-import static user.orderSteps.*;
 
 public class UserLoginTest {
     private UserCreate user;
